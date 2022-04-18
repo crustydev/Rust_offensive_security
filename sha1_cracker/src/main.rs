@@ -35,10 +35,6 @@ fn main() -> Result<(), Box<dyn Error>> {
     let wordlist_file = &args[1];
     let hash_to_crack = &args[2].trim();
 
-    if hash_to_crack.len() != SHA1_HEX_STRING_LENGTH {
-        return Err("sha1 hash not valid".into());
-    }
-
     return find_word_from_hash(hash_to_crack, wordlist_file);
 }
 
