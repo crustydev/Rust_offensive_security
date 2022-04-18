@@ -69,7 +69,7 @@ fn find_word_from_hash(hash: &str, words_filename: &str) -> Result<(), Box<dyn E
 fn create_test_hashes() -> Result<(), Box<dyn Error>> {
     let mut hash_tests: Map<String, Value> = Map::new();
 
-    println!("Starting hash_test file generator...");
+    println!("Starting hashtest file generator...");
     println!("Enter words you know are present in wordlist");
     println!("and others you know likely aren't present\n");
 
@@ -92,19 +92,19 @@ fn create_test_hashes() -> Result<(), Box<dyn Error>> {
 
     let test_json = json!(hash_tests);
 
-    if Path::new("hash_test.json").exists() == false {
-        File::create("hash_test.json").expect("Error opening hash_test.json");
+    if Path::new("hashtest.json").exists() == false {
+        File::create("hashtest.json").expect("Error opening hashtest.json");
     }
 
-    fs::write(String::from("hash_test.json"), test_json.to_string())
-        .expect("Unable to write to hash_test.json");
+    fs::write(String::from("hashtest.json"), test_json.to_string())
+        .expect("Unable to write to hashtest.json");
 
-    println!("sample word-hash pairs created and written to hash_test.json successfully!");
+    println!("sample word-hash pairs created and written to hashtest.json successfully!");
     Ok(())
 }
 
 fn run_test() -> Result<(), Box<dyn Error>> {
-    let hash_test_file = "hash_test.json";
+    let hash_test_file = "hashtest.json";
     let wordlist_file = "wordlist.txt";
 
     let mut tests = File::open(&hash_test_file).unwrap();
