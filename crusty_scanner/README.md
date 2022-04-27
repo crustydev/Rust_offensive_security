@@ -1,4 +1,4 @@
-# Crusty scanner
+# Crusty Scanner
 
 This is a tool for mapping attack surfaces using subdomain enumeration.
 
