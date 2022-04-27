@@ -7,8 +7,8 @@ Crusty scanner is an asynchronous program designed in Rust to accept a target do
 
 ## Usage
 
-To run, download the source code, making sure to have rustc and cargo installed, and type:
-`cargo run crusty_scan <name.com>` in your terminal to run.
+Download the source code, make sure to have rustc and cargo installed and run in terminal with:  
+`cargo run crusty_scan <name.com>`
 
 for example:
 `cargo run crusty_scan <jsattorney.com>`
