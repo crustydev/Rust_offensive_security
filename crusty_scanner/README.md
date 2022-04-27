@@ -3,7 +3,7 @@
 This is a tool for mapping attack surfaces with subdomain enumeration.
 
 ## Description
-Crusty scanner is an asynchronous program designed in Rust to accept a target domain and find its associated subdomains by retrieving entries from a [certificate search website](https://crt.sh), and find out what ports are open for connection in each subdomain.
+Crusty scanner is an asynchronous program designed in Rust to accept a target domain and find its associated subdomains by retrieving entries from a [certificate search website](https://crt.sh), and find out which ports are open for connection in each subdomain.
 
 ## Usage
 
