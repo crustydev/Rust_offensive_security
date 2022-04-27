@@ -10,7 +10,7 @@ Crusty scanner is an asynchronous program designed in Rust to accept a target do
 Download the source code, make sure to have rustc and cargo installed and run in terminal with:  
 `cargo run crusty_scan <name.com>`
 
-for example:
+for example:  
 `cargo run crusty_scan <jsattorney.com>`
 
 If it works as it's meant to, there'll be a list of associated subdomains with your target and the ports they have open.
