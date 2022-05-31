@@ -1,2 +1,2 @@
 # rust_offensive_security
-Different tools for offensive security written in Rustlang.
+Tools for offensive security, made with Rust.
